@@ -124,14 +124,6 @@ $wgDiff3 = "/usr/bin/diff3";
 ## names, ie 'vector', 'monobook':
 $wgDefaultSkin = "vector";
 
-#Restrizione in lettura (* impone il login per la lettura)
-$wgGroupPermissions['*']['read'] = false;
-
-#Restrizione in scrittura (* impone il login per la scrittura)
-$wgGroupPermissions['*']['edit'] = false;
-
-#Restrizione creazione account (* necessario contattare un amministratore per creare account)
-$wgGroupPermissions['*']['createaccount'] = false;
 # Enabled skins.
 # The following skins were automatically enabled:
 wfLoadSkin('MonoBook');
@@ -141,3 +133,18 @@ wfLoadSkin('Vector');
 
 # End of automatically generated settings.
 # Add more configuration options below.
+
+
+#Restrizione in lettura (* impone il login per la lettura)
+$wgGroupPermissions['*']['read'] = false;
+
+#Restrizione in scrittura (* impone il login per la scrittura)
+$wgGroupPermissions['*']['edit'] = false;
+
+#Restrizione creazione account (* necessario contattare un amministratore per creare account)
+$wgGroupPermissions['*']['createaccount'] = false;
+
+#Restrizione utilizzo estensione writeapi
+$wgGroupPermissions['*']['writeapi'] = true;
+
+wfLoadExtension('VisualEditor');
