@@ -124,6 +124,9 @@ $wgDiff3 = "/usr/bin/diff3";
 ## names, ie 'vector', 'monobook':
 $wgDefaultSkin = "vector";
 
+#Restrizione in lettura (* impone il login per la lettura)
+$wgGroupPermissions['*']['read'] = false;
+
 # Enabled skins.
 # The following skins were automatically enabled:
 wfLoadSkin('MonoBook');
