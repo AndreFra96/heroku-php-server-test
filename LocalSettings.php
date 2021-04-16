@@ -127,6 +127,11 @@ $wgDefaultSkin = "vector";
 #Restrizione in lettura (* impone il login per la lettura)
 $wgGroupPermissions['*']['read'] = false;
 
+#Restrizione in scrittura (* impone il login per la scrittura)
+$wgGroupPermissions['*']['edit'] = false;
+
+#Restrizione creazione account (* necessario contattare un amministratore per creare account)
+$wgGroupPermissions['*']['createaccount'] = false;
 # Enabled skins.
 # The following skins were automatically enabled:
 wfLoadSkin('MonoBook');
