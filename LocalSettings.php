@@ -148,3 +148,4 @@ $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['*']['writeapi'] = true;
 
 wfLoadExtension('VisualEditor');
+wfLoadExtension('MobileFrontend');
