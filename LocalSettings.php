@@ -150,3 +150,5 @@ $wgGroupPermissions['*']['writeapi'] = true;
 wfLoadExtension('VisualEditor');
 wfLoadExtension('MobileFrontend');
 wfLoadExtension('DarkMode');
+
+wfLoadSkin('Aether');
