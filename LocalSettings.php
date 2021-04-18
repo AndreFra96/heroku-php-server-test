@@ -122,7 +122,7 @@ $wgDiff3 = "/usr/bin/diff3";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
-$wgDefaultSkin = "aether";
+$wgDefaultSkin = "monobook";
 
 # Enabled skins.
 # The following skins were automatically enabled:
@@ -150,5 +150,3 @@ $wgGroupPermissions['*']['writeapi'] = true;
 wfLoadExtension('VisualEditor');
 wfLoadExtension('MobileFrontend');
 wfLoadExtension('DarkMode');
-
-wfLoadSkin('Aether');
